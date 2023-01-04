@@ -962,7 +962,8 @@
                   "groupByField" : "u_request_type",
                   "isRange" : false,
                   "isPaBucket" : false
-                } ]
+                } ],
+                "disableRanges" : false
               } ]
             },
             "title" : {
@@ -1082,7 +1083,94 @@
               "value" : true
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "clchnggztbbaahhsaddffhhriacddiivxd",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_ca7e2e181b0d0510b81fdce7cc4bcb47",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "simple-list"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "table" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "listTitle" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "listTitle" ]
+                          }
+                        },
+                        "query" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "query" ]
+                          }
+                        },
+                        "listView" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "Experience_list"
+                        }
+                      }
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : null
+                  }
+                },
+                "sysId" : "0844d2741b554910a047ca641a4bcb87"
+              },
+              "operation" : null,
+              "targetId" : "clchnggztccaahhsbddffhhrsffiibcccyv",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : null,
           "definition" : {
             "id" : "96abe7e38d8790718022c5630a92176c",
@@ -1434,7 +1522,87 @@
               "value" : true
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "clchniinggcaahhstddffhhrccflffbbdqz",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "now_vis_extensions.NOW_VIS_WRAPPER#CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_ca7e2e181b0d0510b81fdce7cc4bcb47",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "simple-list"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "params", "table" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "listTitle" : null,
+                        "query" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "active=true^u_when_neededONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()"
+                        },
+                        "listView" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "Experience_list"
+                        }
+                      }
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : null
+                  }
+                },
+                "sysId" : "0844d2741b554910a047ca641a4bcb87"
+              },
+              "operation" : null,
+              "targetId" : "clchniinggcaahhsuddffhhrbbdcbkaqff",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : null,
           "definition" : {
             "id" : "d24d53f60350de7a652caf3188a46ed2",
@@ -1459,7 +1627,7 @@
           "default" : {
             "children" : null,
             "isInline" : null,
-            "items" : [{"element_id":"overdue_needits_score","styles":{}},{"element_id":"request_type_pie","styles":{}},{"element_id":"this_months_needits","styles":{}}],
+            "items" : [{"element_id":"overdue_needits_score","styles":{}},{"element_id":"request_type_pie","styles":{"height":"250px"}},{"element_id":"this_months_needits","styles":{}}],
             "root" : null,
             "rules" : null,
             "styles" : {"flex-direction":"row"},
@@ -1848,7 +2016,165 @@
               "value" : false
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "clchndattaahhtrddffhhrnqjjaajiuu",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#ROW_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_ca7e2e181b0d0510b81fdce7cc4bcb47",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "record"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "table" ]
+                          }
+                        },
+                        "sysId" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "sys_id" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : null
+                  }
+                },
+                "sysId" : "0844d2741b554910a047ca641a4bcb87"
+              },
+              "operation" : null,
+              "targetId" : "clchndatuaahhtsddffhhriieelegeetii",
+              "type" : "EVENT"
+            } ]
+          }, {
+            "eventMappingId" : "clchnabzbaahhtdddffhhrrieihhcqd",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#VIEW_ALL_CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#VIEW_ALL_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "conditional" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_ca7e2e181b0d0510b81fdce7cc4bcb47",
+                "payload" : {
+                  "type" : "MAP_CONTAINER",
+                  "container" : {
+                    "route" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : "simple-list"
+                    },
+                    "fields" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "table" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "p" ]
+                          }
+                        }
+                      }
+                    },
+                    "params" : {
+                      "type" : "MAP_CONTAINER",
+                      "container" : {
+                        "listTitle" : {
+                          "type" : "EVENT_PAYLOAD_BINDING",
+                          "binding" : {
+                            "address" : [ "listTitle" ]
+                          }
+                        },
+                        "query" : null,
+                        "listView" : {
+                          "type" : "JSON_LITERAL",
+                          "value" : "Experience_list"
+                        }
+                      }
+                    },
+                    "redirect" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "passiveNavigation" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "title" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "multiInstField" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "targetRoute" : {
+                      "type" : "JSON_LITERAL",
+                      "value" : null
+                    },
+                    "external" : null
+                  }
+                },
+                "sysId" : "0844d2741b554910a047ca641a4bcb87"
+              },
+              "operation" : null,
+              "targetId" : "clchnabzbaahhteddffhhrzeeseejjkak",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : null,
           "definition" : {
             "id" : "2b1c080881e05dc63b917044290b233f",
