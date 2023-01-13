@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_template_detail">
+    <sc_template_detail action="INSERT_OR_UPDATE">
+        <applies_to_multi_row_variable_set>false</applies_to_multi_row_variable_set>
+        <item_option_new display_value="User criteria granted access">1c09ce17c7321010159ca1e603c26099</item_option_new>
+        <mandatory>false</mandatory>
+        <readonly>false</readonly>
+        <restricted>false</restricted>
+        <set/>
+        <sys_class_name>sc_template_detail</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-01-13 09:58:21</sys_created_on>
+        <sys_id>4c5cabe297102110f77b77d71153afa1</sys_id>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sc_template_detail_4c5cabe297102110f77b77d71153afa1</sys_update_name>
+        <template display_value="Incident template">e72c2be297102110f77b77d71153af5e</template>
+        <value>fb1166d64fff0200086eeed18110c7ab</value>
+    </sc_template_detail>
+</record_update>
